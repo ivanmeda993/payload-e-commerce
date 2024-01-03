@@ -44,8 +44,9 @@ export const ThemeProvider: React.FC<{ children?: React.ReactNode }> = ({ childr
         themeToSet = implicitPreference
       }
     }
+    console.log('theme', themeToSet)
 
-    document.documentElement.setAttribute('data-theme', themeToSet)
+    document.documentElement.setAttribute('data-theme', 'light')
     setThemeState(themeToSet)
   }, [])
 
