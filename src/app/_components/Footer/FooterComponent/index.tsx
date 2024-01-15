@@ -20,8 +20,6 @@ const FooterComponent = ({ footer }: IFooterComponentProps) => {
   const pathname = usePathname()
   const navItems = footer?.navItems || []
 
-  console.log('NAV ITEMS', navItems)
-
   return (
     <footer className={noHeaderFooterUrls.includes(pathname) ? classes.hide : ''}>
       <Gutter>
